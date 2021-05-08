@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BtreeFile\BtreeFile.csproj" />
+    <ProjectReference Include="..\SequencialFile\SequencialFile.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="FormBtree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormComplex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Candal</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="HeaderRow.cs" />
+  </ItemGroup>
+
+</Project>
