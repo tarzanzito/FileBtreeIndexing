@@ -78,6 +78,6 @@ Apagar 07000
 no nó 10000 coloca na esquerda o valor da esquerda do nó 07000 -> 05000
 vai para o nó da esquerda de 07000 e faz search por > 05000 até encontrar o fim...
 pega no valor menor e 
- 
+--
  
  
