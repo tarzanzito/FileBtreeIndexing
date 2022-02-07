@@ -8,3 +8,5 @@
 /XUnitTestProject1/obj
 /WinFormsApp1/obj
 /.vs
+/SequencialFile/bin/Debug/netcoreapp3.1
+/BtreeFile/bin/Debug/netcoreapp3.1

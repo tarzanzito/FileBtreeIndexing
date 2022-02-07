@@ -3,6 +3,7 @@
     public class HeaderRecord : Record
     {
         private FieldByteArray iniMark = new FieldByteArray(FileAttributes.INI_MARK.Length);
+
         public FieldLong TotalRecords = new FieldLong(); //20
         public FieldLong ActiveRecords = new FieldLong();  //20
         public FieldLong LastDeleted = new FieldLong();  //20

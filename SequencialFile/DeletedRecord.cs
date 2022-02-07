@@ -2,7 +2,7 @@
 {
     public class DeletedRecord : Record
     {
-        public FieldLong LastDeleted= new FieldLong();
+        public FieldLong LastDeleted = new FieldLong();
         public FieldNull Remaining;
 
         public DeletedRecord(int rowLength)

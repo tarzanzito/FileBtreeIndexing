@@ -2,6 +2,11 @@
 
 namespace Candal
 {
+    /// <summary>
+    /// where - é uma restrição para T. Neste caso apenas pode ser : Candal.FieldsGrouping ou seus descendentes
+    /// new() - pode dentro da classe criar instancias de T (T x = new T();)
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class BtreeFile<T> where T : Candal.FieldsGrouping, new()
     {
         private T _fieldGroupingKey;
@@ -15,8 +20,9 @@ namespace Candal
 
         public BtreeFile(string fileName)
         {
-            //_fieldGroupingKey = (T) Activator.CreateInstance(typeof(T));
             _fieldGroupingKey = new T(); // T = PersonKey1
+            //_fieldGroupingKey = (T) Activator.CreateInstance(typeof(T)); (arternative)
+
             _sequencialFile = new SequencialFile<BtreeRecord>(fileName, _fieldGroupingKey);
             _btreeRecord = _sequencialFile.GetRecordInstance();
             _btreeRecordStack = new BtreeRecord(_fieldGroupingKey);
@@ -26,7 +32,8 @@ namespace Candal
         {
             get
             {
-                return _isKeyFound;            }
+                return _isKeyFound;
+            }
         }
 
         public bool IsKeyDeleted
